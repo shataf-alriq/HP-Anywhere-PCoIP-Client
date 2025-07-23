@@ -1,6 +1,6 @@
 # Maintainer: shataf-alriq
 pkgname=('pcoip-client' 'pcoip-client-clipboard')
-pkgver=24.07.4
+pkgver=25.06.1
  pkgrel=2
 _ubuntuver=22.04
 pkgrel=2
@@ -23,6 +23,7 @@ depends=(
   'ffmpeg'
   'protobuf'
   'hiredis'
+  'libcap'
 )
 makedepends=('fakeroot' 'patchelf')
 install=pcoip-client.install
@@ -35,7 +36,7 @@ source=(
 )
 
 sha256sums=(
-  '9becb8553e1faed15ff2f27a9755c5e79aa910516f6a90032ead82cf955ea4f5'  # pcoip-client_24.07.4-22.04_amd64.deb
+  '9d0631e4815e898df52f45ae9777e14e4a87fcc04559035cd1449dd256c9b040'  # pcoip-client_24.07.4-22.04_amd64.deb
   '8c9942e9130ab7c343438b1b81603bdd86509d7e2a9cc877ae35a998dbf5e0a8'  # libprotobuf23_3.12.4-1ubuntu7_amd64.deb
   'eb382ba7f1955d111a3b6a70e465d1d8accf995106315b4b9562378c328b411f'  # libhiredis0.14_0.14.1-2_amd64.deb
   '27e2da3a1b0af51b26d021c76b7b28b689fca6d4f96092966c9b0d26587aea87'  # LICENSE.pdf
