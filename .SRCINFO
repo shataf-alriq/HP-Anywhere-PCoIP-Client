@@ -1,0 +1,35 @@
+pkgbase = pcoip-client
+	pkgdesc = Teradici (HP Anyware) PCoIP client
+	pkgver = 25.06.1
+	pkgrel = 2
+	install = pcoip-client.install
+	arch = x86_64
+	license = custom:Teradici
+	makedepends = fakeroot
+	makedepends = patchelf
+	depends = openssl-1.1
+	depends = pcsclite
+	depends = qt5-networkauth
+	depends = qt5-declarative
+	depends = qt5-quickcontrols
+	depends = qt5-quickcontrols2
+	depends = qt5-graphicaleffects
+	depends = qt5-webengine
+	depends = glfw
+	depends = ffmpeg
+	depends = protobuf
+	depends = hiredis
+	depends = libcap
+	source = https://dl.anyware.hp.com/DeAdBCiUYInHcSTy/pcoip-client/deb/ubuntu/pool/jammy/main/p/pc/pcoip-client_25.06.1-22.04/pcoip-client_25.06.1-22.04_amd64.deb
+	source = http://se.archive.ubuntu.com/ubuntu/pool/main/p/protobuf/libprotobuf23_3.12.4-1ubuntu7_amd64.deb
+	source = http://se.archive.ubuntu.com/ubuntu/pool/universe/h/hiredis/libhiredis0.14_0.14.1-2_amd64.deb
+	source = LICENSE.pdf::https://docs.teradici.com/sites/default/files/documents/2022-11/HP%20Anyware%20EULA.14%20Oct%202022.pdf
+	sha256sums = 9d0631e4815e898df52f45ae9777e14e4a87fcc04559035cd1449dd256c9b040
+	sha256sums = 8c9942e9130ab7c343438b1b81603bdd86509d7e2a9cc877ae35a998dbf5e0a8
+	sha256sums = eb382ba7f1955d111a3b6a70e465d1d8accf995106315b4b9562378c328b411f
+	sha256sums = 27e2da3a1b0af51b26d021c76b7b28b689fca6d4f96092966c9b0d26587aea87
+
+pkgname = pcoip-client
+
+pkgname = pcoip-client-clipboard
+	pkgdesc = Teradici PCOIP client clipboard synchronization plugin
