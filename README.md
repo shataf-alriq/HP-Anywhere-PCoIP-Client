@@ -8,10 +8,13 @@ This repo provides an Arch Linux PKGBUILD and optional binary release for the HP
 ### Option 1: Build from source
 
 git clone https://github.com/shataf-alriq/HP-Anywhere-PCoIP-Client.git 
+
 cd HP-Anywhere-PCoIP-Client
+
 makepkg -si
 
 ### Option 2: Download and install binary
 
 wget https://github.com/shataf-alriq/HP-Anywhere-PCoIP-Client/releases/download/v25.06.1-2/pcoip-client-25.06.1-2-x86_64.pkg.tar.zst
+
 sudo pacman -U pcoip-client-25.06.1-2-x86_64.pkg.tar.zst
