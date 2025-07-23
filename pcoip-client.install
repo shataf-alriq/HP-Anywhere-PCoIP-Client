@@ -1,9 +1,20 @@
 # pcoip-client.install
+
 post_install() {
-  # apply HP performance tuning
+  # Apply HP performance tuning (if available)
   pcoip-configure-kernel-networking --persistent &>/dev/null || true
 
-  # ensure proper USB and group permissions
-  setcap cap_setgid+p "$(command -v pcoip-client)" || true
-  setcap cap_setgid+i /usr/lib/pcoip-client/usb-helper || true
+  # Ensure proper USB and group capabilities
+  setcap cap_setgid+p /usr/libexec/pcoip-client/pcoip-client || true
+  setcap cap_setgid+i /usr/libexec/pcoip-client/usb-helper || true
+}
+
+post_upgrade() {
+  post_install
+}
+
+post_remove() {
+  # Clean up capabilities on uninstall
+  setcap -r /usr/libexec/pcoip-client/pcoip-client 2>/dev/null || true
+  setcap -r /usr/libexec/pcoip-client/usb-helper 2>/dev/null || true
 }
