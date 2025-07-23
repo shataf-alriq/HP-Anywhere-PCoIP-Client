@@ -3,6 +3,9 @@ Unofficial HP Anywhere PCoIP client package and setup for Arch Linux.
 
 This repo provides an Arch Linux PKGBUILD and optional binary release for the HP Anyware PCoIP Client (25.06.1).
 
+*This is forked from https://github.com/ppira/pcoip-client and updated to work with the latest (25.06.01+) HP Anyware PCoIP Client
+*Additionaly added some fixes mentioned in comments the outdated https://aur.archlinux.org/packages/pcoip-client
+
 ## Installation
 
 ### Option 1: Build from source
